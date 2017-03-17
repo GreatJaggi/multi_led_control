@@ -13,12 +13,12 @@ void loop() {
   command = Serial.read();
   
   switch (command) {
-    case '1': turnOn(2, 0); break;
-    case '2': turnOn(3, 1); break;
-    case '3': turnOn(4, 2); break;
-    case '4': turnOn(5, 3); break;
-    case '5': turnOn(6, 4); break;
-    case '6': turnOn(7, 5); break;
+    case '1': ledSwitch(2, 0); break;
+    case '2': ledSwitch(3, 1); break;
+    case '3': ledSwitch(4, 2); break;
+    case '4': ledSwitch(5, 3); break;
+    case '5': ledSwitch(6, 4); break;
+    case '6': ledSwitch(7, 5); break;
     case '7': off(); break; //turn off  all leds
     case '8': on(); break; //turn on all leds
 
