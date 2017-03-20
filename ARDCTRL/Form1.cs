@@ -124,5 +124,10 @@ namespace ARDCTRL
 
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ardPort.WriteLine("9");
+        }
     }
 }
